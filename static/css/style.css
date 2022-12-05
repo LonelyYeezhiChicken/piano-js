@@ -67,3 +67,8 @@ li>p:hover {
 .black_active {
     box-shadow: inset 3px -5px0#2c2c2c;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}

@@ -1,49 +1,50 @@
-function play(id) {
+/** 播放 */
+let play = _.throttle((id) => {
   console.log(id);
   switch (id) {
     case "do":
-      sound(500, 262, 500, "sine");
+      sound(500, 262, 250, "sine");
       break;
     case "re":
-      sound(500, 294, 500, "sine");
+      sound(500, 294, 250, "sine");
       break;
     case "me":
-      sound(500, 330, 500, "sine");
+      sound(500, 330, 250, "sine");
       break;
     case "fa":
-      sound(500, 349, 500, "sine");
+      sound(500, 349, 250, "sine");
       break;
     case "so":
-      sound(500, 392, 500, "sine");
+      sound(500, 392, 250, "sine");
       break;
     case "la":
-      sound(500, 440, 500, "sine");
+      sound(500, 440, 250, "sine");
       break;
     case "si":
-      sound(500, 494, 500, "sine");
+      sound(500, 494, 250, "sine");
       break;
     case "high-do":
-      sound(500, 523, 500, "sine");
+      sound(500, 523, 250, "sine");
       break;
   }
-}
+}, 255);
 
 function highPlay(id) {
   switch (id) {
     case "do-re":
-      sound(500, 277, 500, "sine");
+      sound(500, 277, 250, "sine");
       break;
     case "re-me":
-      sound(500, 311, 500, "sine");
+      sound(500, 311, 250, "sine");
       break;
     case "fa-so":
-      sound(500, 369, 500, "sine");
+      sound(500, 369, 250, "sine");
       break;
     case "so-la":
-      sound(500, 415, 500, "sine");
+      sound(500, 415, 250, "sine");
       break;
     case "la-si":
-      sound(500, 466, 500, "sine");
+      sound(500, 466, 250, "sine");
       break;
   }
 }
