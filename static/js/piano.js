@@ -1,5 +1,31 @@
 function play(id) {
   console.log(id);
+  switch (id) {
+    case "do":
+      sound(500, 262, 500, "sine");
+      break;
+    case "re":
+      sound(500, 294, 500, "sine");
+      break;
+    case "me":
+      sound(500, 330, 500, "sine");
+      break;
+    case "fa":
+      sound(500, 349, 500, "sine");
+      break;
+    case "so":
+      sound(500, 392, 500, "sine");
+      break;
+    case "la":
+      sound(500, 400, 500, "sine");
+      break;
+    case "si":
+      sound(500, 484, 500, "sine");
+      break;
+    case "high-do":
+      sound(500, 522, 500, "sine");
+      break;
+  }
 }
 
 let audioContext = new AudioContext();
@@ -11,8 +37,8 @@ function sound(vol, freq, duration, typename) {
   v.connect(u);
   v.frequency.value = freq; //頻率(HZ)
   v.type = typename; //波型
-  u.connect(a.destination);
+  u.connect(audioContext.destination);
   u.gain.value = vol * 0.01; //音量
-  v.start(a.currentTime);
-  v.stop(a.currentTime + duration * 0.001); //秒數
+  v.start(audioContext.currentTime);
+  v.stop(audioContext.currentTime + duration * 0.001); //秒數
 }
