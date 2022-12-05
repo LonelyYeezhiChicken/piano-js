@@ -17,13 +17,13 @@ function play(id) {
       sound(500, 392, 500, "sine");
       break;
     case "la":
-      sound(500, 400, 500, "sine");
+      sound(500, 440, 500, "sine");
       break;
     case "si":
-      sound(500, 484, 500, "sine");
+      sound(500, 494, 500, "sine");
       break;
     case "high-do":
-      sound(500, 522, 500, "sine");
+      sound(500, 523, 500, "sine");
       break;
   }
 }
