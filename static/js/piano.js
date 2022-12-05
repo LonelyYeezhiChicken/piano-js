@@ -28,6 +28,26 @@ function play(id) {
   }
 }
 
+function highPlay(id) {
+  switch (id) {
+    case "do-re":
+      sound(500, 277, 500, "sine");
+      break;
+    case "re-me":
+      sound(500, 311, 500, "sine");
+      break;
+    case "fa-so":
+      sound(500, 369, 500, "sine");
+      break;
+    case "so-la":
+      sound(500, 415, 500, "sine");
+      break;
+    case "la-si":
+      sound(500, 466, 500, "sine");
+      break;
+  }
+}
+
 let audioContext = new AudioContext();
 
 //音量,頻率(HZ),秒數,波型(sine/square/sawtooth/trigangle)
