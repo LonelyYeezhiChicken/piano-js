@@ -15,7 +15,7 @@ li {
 }
 
 li>div {
-    height: 360px;
+    height: 300px;
     width: 60px;
     background: rgba(255, 255, 255, .3);
     border: 1px solid;
@@ -47,7 +47,7 @@ li>div:hover {
 }
 
 li>p {
-    height: 200px;
+    height: 150px;
     width: 40px;
     background-color: #000;
     border-bottom-left-radius: 5.5px;
