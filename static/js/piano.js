@@ -5,9 +5,9 @@ function play(id) {
 let audioContext = new AudioContext();
 
 //音量,頻率(HZ),秒數,波型(sine/square/sawtooth/trigangle)
-function beep(vol, freq, duration, typename) {
-  v = a.createOscillator();
-  u = a.createGain();
+function sound(vol, freq, duration, typename) {
+  v = audioContext.createOscillator();
+  u = audioContext.createGain();
   v.connect(u);
   v.frequency.value = freq; //頻率(HZ)
   v.type = typename; //波型
