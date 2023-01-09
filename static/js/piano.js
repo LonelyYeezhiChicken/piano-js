@@ -29,7 +29,8 @@ let play = _.throttle((id) => {
   }
 }, 255);
 
-function highPlay(id) {
+let highPlay = _.throttle((id) => {
+  console.log(id);
   switch (id) {
     case "do-re":
       sound(500, 277, 250, "sine");
@@ -47,7 +48,7 @@ function highPlay(id) {
       sound(500, 466, 250, "sine");
       break;
   }
-}
+}, 255);
 
 let audioContext = new AudioContext();
 
